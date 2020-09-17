@@ -1,0 +1,26 @@
+Did you attempt to make your computer player very smart -- i.e., do something more clever than just pick a random legal move?
+Yes.
+
+If so, were you able to accomplish this? Is your computer player as smart as you would like?
+Yes and yes.
+
+How did you determine which piece to play next? Tell us about your “pick next move” algorithm.
+steps for the computer to pick an optimal move:
+firstly, checks whether each empty square is a legal move by row,
+if it is a legal move:
+	Because discs played in the corners can't be flipped, corners are the first choice. Therefore, if a legal square is a corner, take the corner.
+If no corners are available:
+	Because flipping lots of discs early on actually gives your opponent an advantage, the computer takes the empty square which flips the lowest number of black tiles in early stage.
+	After the early stage, the computer takes the square which can flip the largest number of black tiles. When comparing the square with the current optimal square, if they can flip the same number of black tiles, make a forecast for the player's next move. Choose the square which could make the player has fewer legal moves.
+
+
+How often did your computer program beat you, or your friends, or whoever tested it out for you?
+About 50% possibility.
+
+
+How would you improve it in the future?
+In the future, I would like to make the computer take more stable positions, which means to chooses edges when the corner is not available.
+
+Reference:
+https://www.ultraboardgames.com/othello/tips.php
+https://www.wikihow.com/Play-Othello
